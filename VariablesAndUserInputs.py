@@ -13,3 +13,11 @@ print(myVariable+30)#This will add 30 to current value of the given variable
 userInput = input("Enter a value...")#This will capture the user input but that will be captured in String type
 
 print("The value you entered is "+userInput)
+
+userInputInt = int(userInput) #Type casting the value of String to Integer
+
+print(userInputInt+100)
+
+userInputFloat = float(userInput)
+
+print(userInputFloat+100)
