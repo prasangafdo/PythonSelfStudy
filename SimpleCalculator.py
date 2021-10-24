@@ -10,4 +10,4 @@ y = int(input("Enter the second number"))
 
 print(x+y)
 
-
+input("Press enter to exit") #If we don't use this, it will terminate the application immediately
