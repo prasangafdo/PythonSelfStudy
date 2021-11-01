@@ -11,3 +11,12 @@ print(names[-2])#This will print second value from last
 
 names.append("New name") #This will add a new value
 print(names[-1])
+
+#Adding another list to another list. Also the list can contain multiple data types
+
+ages = [21,43,10,19] 
+print(ages)
+
+names.extend(ages)
+
+print(names)
