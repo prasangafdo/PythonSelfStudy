@@ -20,3 +20,13 @@ print(ages)
 names.extend(ages)
 
 print(names)
+
+names.remove(43)
+
+print(names)
+
+print(names, ages) #Printing multiple lists
+
+print(len(names))
+
+print(max(ages)) #To use this, list should only contain integer values
