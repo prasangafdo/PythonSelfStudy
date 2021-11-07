@@ -28,3 +28,11 @@ print(myList[-1:])
 print(myList[:-4])
 
 print(myList , myList[:])#Both of these return the same value
+
+#Skipping values
+print(myList[0:8:2])
+print(myList[0:8:4])
+
+print(myList[::3])
+
+print(myList[::-2])#This will skip values and print from backwards
