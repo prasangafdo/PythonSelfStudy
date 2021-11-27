@@ -23,3 +23,11 @@ while inputVal !=0:
     print("Current sum : ",total) #We can't use + for concat like we use in Java. Instead we have to use comma (,)
     inputVal = float(input("Please enter a number: "))   
     total = total+inputVal
+    
+    
+    
+#for loop
+#No condition. Only returns the values in the list
+arr = [12,34,5,612,87,23,1,65,231]
+for num in arr:
+    print(num)
