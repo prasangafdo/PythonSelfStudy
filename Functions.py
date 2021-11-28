@@ -20,3 +20,12 @@ def addTwoNumbers(x,y):
 
 sum = addTwoNumbers(10,21)
 print(sum)
+
+#default parameters
+def studentDetails(name="Supun", marks=70):
+    print(name, "scored", marks)
+    
+studentDetails() #This will print the default value
+studentDetails("Kamal", 20) #This will override the default values
+studentDetails("Janith") #This will override only the name
+studentDetails(marks=60) #This will override only the marks (If we are calling the second parameter, we have to specify that within the brackets. Otherwise it will override the first parameter
