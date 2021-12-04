@@ -29,3 +29,12 @@ studentDetails() #This will print the default value
 studentDetails("Kamal", 20) #This will override the default values
 studentDetails("Janith") #This will override only the name
 studentDetails(marks=60) #This will override only the marks (If we are calling the second parameter, we have to specify that within the brackets. Otherwise it will override the first parameter
+
+
+#Passing multiple parameters with Python functions
+def studentMarks(name, *marks):
+    print(name)
+    print(marks)
+    
+
+studentMarks("Sudath", 43,23,56,73) #This will print as a tuple. We cannot add or remove data from tuple
