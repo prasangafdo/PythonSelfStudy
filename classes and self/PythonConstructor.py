@@ -12,5 +12,5 @@ class PythonConstructor:
     def testFunction(self):
         print("Hello I'm a test function")
          
-objectName = PythonConstructor()   
+objectName = PythonConstructor()  #If the constructor has an argument, we need to pass the value for that argument here 
 objectName.testFunction()      
