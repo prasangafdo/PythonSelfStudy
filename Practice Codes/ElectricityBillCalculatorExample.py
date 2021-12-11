@@ -18,8 +18,11 @@ class ElectricityBillCalculator:
             # higherAmount = pointsCount - 50
             # calculatedAmount = higherAmount*5
             # lowerAmount = pointsCount - higherAmount
-        else:
-            print("Highh")
+        elif pointsCount > 49:
+            highestAmount = pointsCount - 50
+            higherAmount = pointsCount - highestAmount - 20
+            calculatedAmount = higherAmount * 3 + highestAmount * 5 + (pointsCount - (higherAmount + highestAmount)) * 2
+            self.billAmount = calculatedAmount
 
         # if 50 < pointsCount:
         #     self.billAmount = pointsCount * 5
@@ -28,9 +31,12 @@ class ElectricityBillCalculator:
         # else:
         #     self.billAmount = pointsCount * 2
 
-bill1 = ElectricityBillCalculator(21)
+
+bill1 = ElectricityBillCalculator(49)
 print(bill1.billAmount)
 
+bill2 = ElectricityBillCalculator(52)
+print(bill2.billAmount)
 # bill1 = ElectricityBillCalculator(20)
 # print(bill1.billAmount)
 # bill1 = ElectricityBillCalculator(19)
