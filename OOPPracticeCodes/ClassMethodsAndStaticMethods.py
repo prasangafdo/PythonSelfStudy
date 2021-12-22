@@ -16,12 +16,13 @@ class employee:
         self.increment = self.increment * 1.5
 
     def raiseAmount(self):
-        self.salary = int(self.salary * self.increment) # Casting to return as an integer
+        self.salary = int(self.salary * self.increment)  # Casting to return as an integer
 
 
 employee1 = employee("Kasun", "Nirmala", 20000)
-print(employee1 .salary)
+print(employee1.salary)
 employee1.raiseAmount()
 print(employee1.salary)
 
+# Class methods - affects all instance of the class
 
