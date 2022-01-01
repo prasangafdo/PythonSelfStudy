@@ -18,11 +18,15 @@ class employee:
     def raiseAmount(self):
         self.salary = int(self.salary * self.increment)  # Casting to return as an integer
 
+    @classmethod  # Class methods - affects all instance of the class
+    def setIncrement(cls, amount): # In the first variable we are passing the class
+        pass
+
 
 employee1 = employee("Kasun", "Nirmala", 20000)
 print(employee1.salary)
 employee1.raiseAmount()
 print(employee1.salary)
 
-# Class methods - affects all instance of the class
+
 
