@@ -23,9 +23,10 @@ class employee:
         cls.increment = amount
 
 
-employee.setIncrement(2)
+employee.setIncrement(2) # We usually runs the class method from a class. Not from an instance
 
 employee1 = employee("Kasun", "Nirmala", 20000)
 print(employee1.salary)
 employee1.raiseAmount()
 print(employee1.salary)
+
